@@ -150,13 +150,6 @@ header{
     height: 100%;
     position: absolute;
     inset: 0 0 0 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    pointer-events: none;
-}
-.carousel .list .item:nth-child(1){
-    opacity: 1;
-    pointer-events: auto;
 }
 .carousel .list .item img{
     width: 100%;
