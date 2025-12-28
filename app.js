@@ -53,3 +53,42 @@ function showSlider(type){
 runNextAuto = setTimeout(() => {
     nextDom.click();
 }, timeAutoNext);
+
+// Handle trailer button clicks
+document.addEventListener('DOMContentLoaded', function() {
+    const trailerButtons = document.querySelectorAll('.trailer-btn');
+    
+    trailerButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const vidBox = this.parentElement.nextElementSibling;
+            const video = vidBox.querySelector('video');
+            
+            if (vidBox.classList.contains('active')) {
+                vidBox.classList.remove('active');
+                video.pause();
+                video.currentTime = 0;
+            } else {
+                // Close all other videos
+                document.querySelectorAll('.vid-box.active').forEach(box => {
+                    box.classList.remove('active');
+                    box.querySelector('video').pause();
+                });
+                
+                vidBox.classList.add('active');
+                video.play();
+            }
+        });
+    });
+    
+    // Preload only the first image
+    const firstImage = document.querySelector('.carousel .list .item:first-child img');
+    if (firstImage) {
+        firstImage.loading = 'eager';
+    }
+    
+    // Lazy load other images
+    const otherImages = document.querySelectorAll('.carousel .list .item:not(:first-child) img');
+    otherImages.forEach(img => {
+        img.loading = 'lazy';
+    });
+});
