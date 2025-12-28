@@ -53,28 +53,3 @@ function showSlider(type){
 runNextAuto = setTimeout(() => {
     nextDom.click();
 }, timeAutoNext);
-
-// Handle trailer button clicks
-const trailerButtons = document.querySelectorAll('.trailer-btn');
-
-trailerButtons.forEach(button => {
-    button.addEventListener('click', function() {
-        const vidBox = this.parentElement.nextElementSibling;
-        const video = vidBox.querySelector('video');
-        
-        if (vidBox.classList.contains('active')) {
-            vidBox.classList.remove('active');
-            video.pause();
-            video.currentTime = 0;
-        } else {
-            // Close all other videos
-            document.querySelectorAll('.vid-box.active').forEach(box => {
-                box.classList.remove('active');
-                box.querySelector('video').pause();
-            });
-            
-            vidBox.classList.add('active');
-            video.play();
-        }
-    });
-});

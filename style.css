@@ -243,11 +243,6 @@ header{
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(61, 61, 61, 0.733);
-    display: none;
-  }
-
-  .vid-box.active{
-    display: block;
   }
 
   .vid-trailer{
