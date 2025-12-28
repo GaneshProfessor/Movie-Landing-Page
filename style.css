@@ -10,6 +10,15 @@ body{
 * {
     box-sizing: border-box;
 }
+
+/* Smooth page load */
+body.loading .carousel {
+    opacity: 0;
+}
+
+body.loading .carousel .list .item .content {
+    display: none;
+}
 header{
     display: flex;
     height: 70px;
@@ -131,18 +140,35 @@ header{
     width: 100vw;
     overflow: hidden;
     position: relative;
+    opacity: 0;
+    animation: fadeInCarousel 0.5s ease-in forwards;
 }
+
+@keyframes fadeInCarousel {
+    to {
+        opacity: 1;
+    }
+}
+
 .carousel .list .item{
     width: 100%;
     height: 100%;
     position: absolute;
     inset: 0 0 0 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel .list .item:nth-child(1){
+    opacity: 1;
+    z-index: 1;
 }
 .carousel .list .item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
+    filter: brightness(0.8);
 }
 .carousel .list .item .content{
     position: absolute;
@@ -155,6 +181,11 @@ header{
     box-sizing: border-box;
     color: #fff;
     text-shadow: 0 5px 10px #0004;
+    opacity: 0;
+}
+
+.carousel .list .item:nth-child(1) .content {
+    opacity: 1;
 }
 .content h1{
     font-weight: bold;
@@ -308,23 +339,18 @@ header{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.587);
 }
 
-/* animation */
-.carousel .list .item:nth-child(1){
-    z-index: 1;
-}
-
-/* animation text in first item */
+/* create animation when next click */
 
 .carousel .list .item:nth-child(1) .content 
 {
-    filter: blur(20px);
     opacity: 0;
-    animation: showContent .5s 1s linear 1 forwards;
+    filter: blur(20px);
+    animation: showContent .5s 0.3s linear 1 forwards;
 }
 @keyframes showContent{
     to{
-        filter: blur(0px);
         opacity: 1;
+        filter: blur(0px);
     }
 }
 /* create animation when next click */

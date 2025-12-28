@@ -8,6 +8,11 @@ let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
 let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
 let timeDom = document.querySelector('.carousel .time');
 
+// Remove loading class when page is ready
+window.addEventListener('load', function() {
+    document.body.classList.remove('loading');
+});
+
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 2000;
 let timeAutoNext = 12000;
