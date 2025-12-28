@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies Hub - Movies</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .movies-section {
+      padding: 50px 5%;
+    }
+    .movies-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ff0040;
+      text-transform: uppercase;
+      border-left: 6px solid #007bff;
+      padding-left: 10px;
+    }
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .movie-card {
+      background: #1c1c1c;
+      color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .movie-card img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+    }
+    .movie-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+    .movie-info {
+      padding: 10px;
+      text-align: center;
+    }
+    .movie-info h3 {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+    .movie-info p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down" data-aos-duration="2000">
+    <h1><span style="color: #ff0040;">Movies</span><span style="color: #007bff;"> Hub</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movie.html" class="active">Movies</a>
+      <a href="anime.html">Animes</a>
+      <a href="series.html">Series</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hollywood -->
+<section class="movies-section" id="hollywood">
+    <h2>Hollywood</h2>
+    <div class="movie-grid">
+
+  <a href="https://www.rottentomatoes.com/m/avengers_endgame" target="_blank">
+    <div class="movie-card">
+      <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SL1500_.jpg" alt="Avengers End Game">
+      <div class="movie-info">
+        <h3>Avengers End Game</h3>
+        <p>2019 • Action / Sci-fi</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://www.rottentomatoes.com/m/inception" target="_blank">
+    <div class="movie-card">
+      <img src="https://m.media-amazon.com/images/I/81p+xe8cbnL._AC_SL1500_.jpg" alt="Inception">
+      <div class="movie-info">
+        <h3>Inception</h3>
+        <p>2010 • Sci-fi / Action</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://www.rottentomatoes.com/m/avatar" target="_blank">
+    <div class="movie-card">
+      <img src="https://m.media-amazon.com/images/I/61OUGpUfAyL._AC_SY679_.jpg" alt="Avatar">
+      <div class="movie-info">
+        <h3>Avatar</h3>
+        <p>2009 • Sci-Fi / Action</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+    <!-- Tollywood -->
+<section class="movies-section" id="tollywood">
+  <h2>Tollywood</h2>
+  <div class="movie-grid">
+
+    <a href="https://www.rottentomatoes.com/m/baahubali_the_beginning" target="_blank">
+      <div class="movie-card">
+        <img src="https://resizing.flixster.com/gYemYRsEoq66ym4AU8g2MnIUr_g=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11546593_p_v8_af.jpg" alt="Baahubali">
+        <div class="movie-info">
+          <h3>Baahubali: The Beginning</h3>
+          <p>2015 • Action / Drama</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.rottentomatoes.com/m/rrr" target="_blank">
+      <div class="movie-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg" alt="RRR">
+        <div class="movie-info">
+          <h3>RRR</h3>
+          <p>2022 • Historical / Action</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.rottentomatoes.com/m/pushpa_the_rise_part_1" target="_blank">
+      <div class="movie-card">
+        <img src="https://resizing.flixster.com/vCFXSpSr-7svjjdA5UrSCPJAoAE=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p27444011_v_v10_aa.jpg" alt="Pushpa">
+        <div class="movie-info">
+          <h3>Pushpa: The Rise</h3>
+          <p>2021 • Action / Drama</p>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- Bollywood -->
+<section class="movies-section" id="bollywood">
+  <h2>Bollywood</h2>
+  <div class="movie-grid">
+
+    <a href="https://www.rottentomatoes.com/m/3_idiots" target="_blank">
+      <div class="movie-card">
+        <img src="https://resizing.flixster.com/9sLibhoxFvMKWQwuiFVNB2USIQo=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7951929_p_v8_aa.jpg" alt="3 Idiots">
+        <div class="movie-info">
+          <h3>3 Idiots</h3>
+          <p>2009 • Comedy / Drama</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.rottentomatoes.com/m/dangal" target="_blank">
+      <div class="movie-card">
+        <img src="https://resizing.flixster.com/Doy-sR2Sc-l781lF63OZb5gWVPQ=/206x305/v2/https://resizing.flixster.com/pgk7SHTEFR3NbWDlGMl4etn9rj4=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzVkNWFlYmQxLTkyYzktNGZiYi1iN2JiLTU1MGRlNTM4ZDc0My53ZWJw" alt="Dangal">
+        <div class="movie-info">
+          <h3>Dangal</h3>
+          <p>2016 • Biography / Sports</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.rottentomatoes.com/m/kgf_chapter_1" target="_blank">
+      <div class="movie-card">
+        <img src="https://resizing.flixster.com/r7pwx-2v3bWJa4lJJ7_Q1JwhcE0=/206x305/v2/https://resizing.flixster.com/qO53dQK8Q2ED_EgNuRKtKGQPODs=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzEwYTllYmMyLTE5N2EtNDVmYy1iZWUzLWI3NTAwZDEwZGQ2Yi53ZWJw" alt="KGF Chapter 1">
+        <div class="movie-info">
+          <h3>KGF: Chapter 1</h3>
+          <p>2018 • Action / Drama</p>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- Search Your Favorite Movie -->
+<section class="movies-section" id="search">
+  <h2>Search Your Favorite Movie</h2>
+  <div class="movie-search">
+    <input type="text" id="movieSearch" placeholder="Type a movie name...">
+    <button onclick="searchMovie()">Search</button>
+  </div>
+</section>
+
+<script>
+function searchMovie() {
+  const query = document.getElementById("movieSearch").value.trim();
+  if (query) {
+    // open search results page instead of direct movie link
+    window.open(`https://www.rottentomatoes.com/search?search=${encodeURIComponent(query)}`, '_blank');
+  } else {
+    alert("Please enter a movie name!");
+  }
+}
+
+document.getElementById("movieSearch").addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    searchMovie();
+  }
+});
+</script>
+
+
+  </main>
+</body>
+</html>

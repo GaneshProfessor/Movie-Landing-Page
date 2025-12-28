@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies Hub - Anime</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .movies-section {
+      padding: 50px 5%;
+    }
+    .movies-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ff0040;
+      text-transform: uppercase;
+      border-left: 6px solid #007bff;
+      padding-left: 10px;
+    }
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .movie-card {
+      background: #1c1c1c;
+      color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .movie-card img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+    }
+    .movie-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+    .movie-info {
+      padding: 10px;
+      text-align: center;
+    }
+    .movie-info h3 {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+    .movie-info p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down" data-aos-duration="2000">
+    <h1><span style="color: #ff0040;">Movies</span><span style="color: #007bff;"> Hub</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movie.html">Movies</a>
+      <a href="anime.html" class="active">Animes</a>
+      <a href="series.html">Series</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Anime Section -->
+    <section class="movies-section" id="anime">
+      <h2>Popular Anime</h2>
+      <div class="movie-grid">
+
+        <a href="https://www.rottentomatoes.com/m/your_name" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/MEPsTgXufpS0cA04X8qn8mG3eR4=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p13207488_p_v8_aa.jpg" alt="Your Name">
+            <div class="movie-info">
+              <h3>Your Name</h3>
+              <p>2016 • Romance / Fantasy</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.rottentomatoes.com/m/demon_slayer_mugen_train" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/cWiob5pO5Q1EyaIqI1EUMN0Lh0Q=/206x305/v2/https://resizing.flixster.com/H9j5_zrJ7pzivfH1owrTecm3uso=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzJkNGRlYzE0LTkwMTktNDA5NC1hMzlhLTMwYjQ5MTY3ODg0Ny5qcGc=" alt="Demon Slayer Mugen Train">
+            <div class="movie-info">
+              <h3>Demon Slayer: Mugen Train</h3>
+              <p>2020 • Action / Adventure</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.rottentomatoes.com/m/spirited_away" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/eAzq-iZ27I0GSxCkkpl8Oz_Mnxo=/206x305/v2/https://resizing.flixster.com/toMzSC_5b1NF7MxJ5-CJeL1S-Z8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRlY2RiZDcyLWU5ZmEtNDliMy1iOTMyLTYzNzhjY2RjOWIxNy5qcGc=" alt="Spirited Away">
+            <div class="movie-info">
+              <h3>Spirited Away</h3>
+              <p>2001 • Fantasy / Drama</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Top Anime Series -->
+    <section class="movies-section" id="anime-series">
+      <h2>Top Anime Series</h2>
+      <div class="movie-grid">
+
+        <a href="https://www.rottentomatoes.com/tv/attack_on_titan" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/z6O7C9OwQ3fLCOkx163KDMb4WuQ=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10701949_b_v9_ah.jpg" alt="Attack on Titan">
+            <div class="movie-info">
+              <h3>Attack on Titan</h3>
+              <p>2013 • Action / Dark Fantasy</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.rottentomatoes.com/tv/naruto" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/c2qMEiR98SgnSxxE0XwulbcsfLs=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p194893_b_v12_aa.jpg" alt="Naruto">
+            <div class="movie-info">
+              <h3>Naruto</h3>
+              <p>2002 • Action / Adventure</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.rottentomatoes.com/m/suzume" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/SF3W0u3X7Ug4PXXfZr5DjPjIdLU=/206x305/v2/https://resizing.flixster.com/zg3xSM8uDH5CXhrMDpZ-p4qhpp8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzI3OGExOWVjLTIwNGEtNGRhNS1hMzIxLTE5OGFhYWNlOWRhOS5wbmc=" alt="Death Note">
+            <div class="movie-info">
+              <h3>Suzume</h3>
+              <p>2023 • Fantasy / Adventure</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Search Your Favorite Anime -->
+    <section class="movies-section" id="search">
+      <h2>Search Your Favorite Anime</h2>
+      <div class="movie-search">
+        <input type="text" id="animeSearch" placeholder="Type an anime name...">
+        <button onclick="searchAnime()">Search</button>
+      </div>
+    </section>
+
+    <script>
+      function searchAnime() {
+        const query = document.getElementById("animeSearch").value.trim();
+        if (query) {
+          window.open(`https://www.rottentomatoes.com/search?search=${encodeURIComponent(query)}`, '_blank');
+        } else {
+          alert("Please enter an anime name!");
+        }
+      }
+
+      document.getElementById("animeSearch").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          searchAnime();
+        }
+      });
+    </script>
+
+  </main>
+</body>
+</html>

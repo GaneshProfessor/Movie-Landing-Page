@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies Hub - Series</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .movies-section {
+      padding: 50px 5%;
+    }
+    .movies-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ff0040;
+      text-transform: uppercase;
+      border-left: 6px solid #007bff;
+      padding-left: 10px;
+    }
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .movie-card {
+      background: #1c1c1c;
+      color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .movie-card img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+    }
+    .movie-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+    .movie-info {
+      padding: 10px;
+      text-align: center;
+    }
+    .movie-info h3 {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+    .movie-info p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down" data-aos-duration="2000">
+    <h1><span style="color: #ff0040;">Movies</span><span style="color: #007bff;"> Hub</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movie.html">Movies</a>
+      <a href="anime.html">Animes</a>
+      <a href="series.html" class="active">Series</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Top Series -->
+    <section class="movies-section" id="top-series">
+      <h2>Top Series</h2>
+      <div class="movie-grid">
+
+        <a href="https://www.rottentomatoes.com/tv/breaking_bad" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/aFlnGpyD8kDQFfHsjleVKHSm4qY=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p185846_b_v8_ad.jpg" alt="Breaking Bad">
+            <div class="movie-info">
+              <h3>Breaking Bad</h3>
+              <p>2008 • Crime / Drama</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.rottentomatoes.com/tv/stranger_things" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/xUp-5UDw5IyRC2k8Q9EoW7w_m1s=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12991665_b_v8_aa.jpg" alt="Stranger Things">
+            <div class="movie-info">
+              <h3>Stranger Things</h3>
+              <p>2016 • Sci-Fi / Horror</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.rottentomatoes.com/tv/when_life_gives_you_tangerines" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/c65lWUHAQhsCESfItQe7PfBzSJQ=/206x305/v2/https://resizing.flixster.com/tgqoxm9m00e4rkPJRvT2SHipEZQ=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvZTAzZDA1MWItN2E5Yy00ZjIzLWE4ZjktOTNhYTkwMGU2ZDE0LmpwZw==" alt="Game of Thrones">
+            <div class="movie-info">
+              <h3>When Life Gives You Tangerines</h3>
+              <p>2025 • Romance / Drama</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Netflix Originals -->
+    <section class="movies-section" id="netflix">
+      <h2>Netflix Originals</h2>
+      <div class="movie-grid">
+
+        <a href="https://www.rottentomatoes.com/tv/the_witcher" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/6dSw4xBjbDvrrHSl9gt0tcov0qU=/206x305/v2/https://resizing.flixster.com/M38VVEAlTMQsngkj6B-aZPRxX-Q=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvMGM5OWM1NDktODgwOC00MzdkLWJmNDUtMTkwNTBlZmRjN2IxLmpwZw==" alt="The Witcher">
+            <div class="movie-info">
+              <h3>The Witcher</h3>
+              <p>2019 • Fantasy / Adventure</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.rottentomatoes.com/tv/money_heist" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/W8eb1lnh5UGAEux2wXbfbgcc23E=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p14100007_b_v8_au.jpg" alt="Money Heist">
+            <div class="movie-info">
+              <h3>Money Heist</h3>
+              <p>2017 • Action / Thriller</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.rottentomatoes.com/tv/peaky_blinders" target="_blank">
+          <div class="movie-card">
+            <img src="https://resizing.flixster.com/yuCI_MoNUTdQwm8CvDd4y9Hk8yA=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10182728_b_v13_bd.jpg" alt="Peaky Blinders">
+            <div class="movie-info">
+              <h3>Peaky Blinders</h3>
+              <p>2013 • Crime / Drama</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Search Your Favorite Series -->
+    <section class="movies-section" id="search">
+      <h2>Search Your Favorite Series</h2>
+      <div class="movie-search">
+        <input type="text" id="seriesSearch" placeholder="Type a series name...">
+        <button onclick="searchSeries()">Search</button>
+      </div>
+    </section>
+
+    <script>
+      function searchSeries() {
+        const query = document.getElementById("seriesSearch").value.trim();
+        if (query) {
+          window.open(`https://www.rottentomatoes.com/search?search=${encodeURIComponent(query)}`, '_blank');
+        } else {
+          alert("Please enter a series name!");
+        }
+      }
+
+      document.getElementById("seriesSearch").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          searchSeries();
+        }
+      });
+    </script>
+
+  </main>
+</body>
+</html>
